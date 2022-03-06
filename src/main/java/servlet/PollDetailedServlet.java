@@ -53,7 +53,7 @@ public class PollDetailedServlet extends HttpServlet {
                         question.setAnswers(answerList);
                     }).collect(Collectors.toList());
             req.setAttribute("questionList",questionList);
-            req.getRequestDispatcher("/poll_detailed.jsp").forward(req,resp);
+            req.getRequestDispatcher("/pollDetail.jsp").forward(req,resp);
         }
     }
 }
