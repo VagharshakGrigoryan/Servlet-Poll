@@ -2,19 +2,17 @@ package dao.impl;
 
 import dao.PollDao;
 import dao.config.ConnectionFactory;
-import lombok.RequiredArgsConstructor;
 import model.Poll;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@RequiredArgsConstructor
-public class PolllDaoImpl implements PollDao<Poll> {
+public class PollDaoImpl implements PollDao<Poll> {
 
     private final Connection connection;
 
-    public PolllDaoImpl(){
+    public PollDaoImpl(){
         this.connection = ConnectionFactory.getInstance().getConnection();
     }
 

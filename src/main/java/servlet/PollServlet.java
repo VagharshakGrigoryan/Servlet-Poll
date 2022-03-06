@@ -1,7 +1,7 @@
 package servlet;
 
 import dao.PollDao;
-import dao.impl.PolllDaoImpl;
+import dao.impl.PollDaoImpl;
 import model.Poll;
 
 import javax.servlet.ServletException;
@@ -19,7 +19,7 @@ public class PollServlet extends HttpServlet {
     private final PollDao<Poll> pollDao;
 
     public PollServlet(){
-        pollDao = new PolllDaoImpl();
+        pollDao = new PollDaoImpl();
     }
 
     @Override

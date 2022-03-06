@@ -1,10 +1,8 @@
 package dao.impl;
 
-
 import dao.QuestionDao;
 import dao.config.ConnectionFactory;
 import model.Question;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
