@@ -31,6 +31,6 @@ public class PollServlet extends HttpServlet {
             e.printStackTrace();
         }
         req.setAttribute("pollList",pollList);
-        req.getRequestDispatcher("/WEB-INF/view/poll.jsp").forward(req,resp);
+        req.getRequestDispatcher("/poll.jsp").forward(req,resp);
     }
 }

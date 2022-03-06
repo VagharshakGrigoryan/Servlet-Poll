@@ -55,7 +55,7 @@ public class PollResultServlet extends HttpServlet {
             resp.sendRedirect("/poll");
         }else {
             req.setAttribute("result",result);
-            req.getRequestDispatcher("/WEB-INF/view/poll_result.jsp").forward(req,resp);
+            req.getRequestDispatcher("/poll_result.jsp").forward(req,resp);
         }
 
     }
